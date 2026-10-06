@@ -1,0 +1,36 @@
+body {
+    background-color: #3b82f6;
+    background: linear-gradient(to right, #80a8ff, #CEB5FF); 
+    font-family: Neuton, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/*---------Header-------------------------------- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.services {
+    font-size: 18px;
+    text-shadow: 1px 1px 6px #33363D;
+    color: #FFFADA
+
+}
+.logo {
+    font-size: 40px;
+    font-weight: 800;  
+    text-shadow: 1px 1px 6px #33363D;
+    color: #FFFADA
+}
