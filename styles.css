@@ -3,6 +3,9 @@ body {
     background: linear-gradient(to right, #80a8ff, #CEB5FF); 
     font-family: Neuton, serif;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
     margin: 0;
     padding: 0;
 
@@ -51,4 +54,10 @@ ul {
 }
 .slogan p {
     font-size: 20px;
+}
+footer {
+    text-align: center;
+    color: #FFFADA;
+    text-shadow: 1px 1px 6px #33363D;
+    margin-top: auto;
 }
