@@ -8,8 +8,17 @@ body {
     min-height: 100dvh;
     margin: 0;
     padding: 0;
-
+    background-image:
+    linear-gradient(
+      rgb(0 0 0 / 45%),
+      rgb(0 0 0 / 45%)
+    ),
+    url("./images/main-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 /*---------Header-------------------------------- */
 ul {
     list-style-type: none;
@@ -48,8 +57,7 @@ ul {
     text-shadow: 1px 1px 6px #33363D;
 }
 .slogan h2 {
-    font-size: 100px;
-    margin-bottom: 20px;
+    font-size: 110px;
     margin-top: 20px;
 }
 .slogan p {
@@ -60,4 +68,19 @@ footer {
     color: #FFFADA;
     text-shadow: 1px 1px 6px #33363D;
     margin-top: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button {
+    background-color: #FFFADA;
+    color: #33363D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
