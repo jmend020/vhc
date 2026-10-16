@@ -13,7 +13,7 @@ body {
       rgb(0 0 0 / 45%),
       rgb(0 0 0 / 45%)
     ),
-    url("./images/main-bg.jpg");
+    url("./images/bg-alt-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,13 +35,12 @@ ul {
     padding-left: 40px;
 }
 .services {
-    font-size: 18px;
+    font-size: 30px;
     text-shadow: 1px 1px 6px #33363D;
     color: #FFFADA
-
 }
 .logo {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 800;  
     text-shadow: 2px 2px 7px #33363D;
     color: #FFFADA
@@ -81,7 +80,7 @@ button {
     padding: 12px 23px;
     font-size: 18px;
     text-shadow: 1px 1px 6px#33363D;
-    box-shadow: 1px 1px 3px #FFFADA ;
+    box-shadow: 1px 1px 3px #33363D; ;
     cursor: pointer;
     border-radius: 14px;
     transition: background-color 0.3s ease, color 0.3s ease;
