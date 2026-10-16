@@ -4,5 +4,4 @@ Website for Viynl'la Hand Crafts.
 
 
 Image credits to:
-
-Kelly Sikkema (https://unsplash.com/@kellysikkema)
+Merve Sehirli Nasir (https://unsplash.com/@32steps)
