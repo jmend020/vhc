@@ -43,7 +43,7 @@ ul {
     font-size: 45px;
     font-weight: 800;  
     text-shadow: 2px 2px 7px #33363D;
-    color: #FFFADA
+    color: #FFFADA;
 }
 /*---------Main-------------------------------- */
 .slogan {
@@ -89,7 +89,7 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 /*---------------section 2------------------------- */
-.sec-2-cont {
+.sec-2-container {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -98,13 +98,14 @@ button {
     border: solid 2px #FFFADA;
     border-radius: 20px;
     margin: 60px auto;
+    margin-top: 120px;
     padding: 40px;
     width: 80%;
     box-shadow: 0px 4px 6px #33363D;
 
 }
 .section-2-heading {
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
@@ -115,8 +116,7 @@ button {
     color: #FFFADA;
     text-shadow: 1px 1px 6px #33363D;
     margin-top: 60px;
-    font-size: 20px;
-}
+    font-size: 25px;
 img {
     border-radius: 8px;
     box-shadow: 0px 4px 6px #33363D;
