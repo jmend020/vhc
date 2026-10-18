@@ -10,8 +10,8 @@ body {
     padding: 0;
     background-image:
     linear-gradient(
-      rgb(0 0 0 / 20%),
-      rgb(0 0 0 / 20%)
+      rgb(0 0 0 / 30%),
+      rgb(0 0 0 / 30%)
     ),
     url("./images/bg-alt-1.jpg");
     background-size: cover;
@@ -33,11 +33,12 @@ ul {
     max-width: 100%;
     padding-right: 60px;
     padding-left: 40px;
+    margin-top: 40px;
 }
 .services {
     font-size: 30px;
     text-shadow: 1px 1px 6px #33363D;
-    color: #FFFADA
+    color: #FFFADA;
 }
 .logo {
     font-size: 45px;
@@ -138,19 +139,20 @@ img {
    
 }
 .img-smple-2 {
-    border: solid red;
     display: flex;
     justify-content: space space-evenly;
     align-items: center;
-    gap: 40px;
+    color: #FFFADA;
+    text-shadow: 2px 2px 8px #33363D;
+    gap: 60px;
 
 }
 .img-smple-3 {
-    border: solid red;
     display: flex;
     justify-content: space space-evenly;
     align-items: center;
     gap: 60px;
-    padding-right: 20px;
+    color: #FFFADA;
+    text-shadow: 2px 2px 8px #33363D;
 
 }
