@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-image:
@@ -17,6 +18,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*---------Header-------------------------------- */
@@ -30,10 +40,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    padding-right: 60px;
-    padding-left: 40px;
-    margin-top: 40px;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1.5rem clamp(1rem, 4vw, 3rem);
+    margin-top: 1rem;
+}
+.site-logo {
+    display: block;
+    width: clamp(120px, 22vw, 260px);
+    height: auto;
+    box-shadow: none;
 }
 .services {
     font-size: 30px;
@@ -55,10 +71,14 @@ ul {
     height: 50vh;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
+    margin: 0 0 auto;
+    padding: 0 0 auto;
 }
 .slogan h2 {
-    font-size: 110px;
-    margin-top: 20px;
+    font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+    text-align: center;
+    line-height: 1.1;
+    margin: 0;
 }
 .slogan p {
     font-size: 20px;
@@ -83,7 +103,7 @@ button {
     border: none;
     padding: 12px 23px;
     font-size: 18px;
-    text-shadow: 1px 1px 6px#33363D;
+    text-shadow: 1px 1px 4px#33363D;
     box-shadow: 1px 1px 3px #33363D; ;
     cursor: pointer;
     border-radius: 14px;
@@ -93,10 +113,11 @@ button {
 .sec-2-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center; 
     gap: 40px;
     border: solid 4px #FFFADA;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin: 60px auto;
     margin-top: 120px;
@@ -106,7 +127,9 @@ button {
 
 }
 .section-2-heading {
-    font-size: 80px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-align: center;
+    line-height: 1.15;
     text-align: center;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
@@ -116,31 +139,30 @@ button {
     text-align: center;
     color: #FFFADA;
     text-shadow: 1px 1px 6px #33363D;
-    margin-top: 60px;
+    margin-top: 4%;
     font-size: 25px;
+    padding-bottom: 60px;
 }
+
 img {
     border-radius: 8px;
     box-shadow: 0px 4px 6px #33363D;
+    max-width: 100%;
 } 
 .img-cont {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 90px;
 }
 .img-smple {
     display: flex;
-    justify-content: space space-evenly;
     align-items: center;
     gap: 60px;
     color: #FFFADA;
-    text-shadow: 2px 2px 8px #33363D;
-
-   
+    text-shadow: 2px 2px 8px #33363D;  
 }
 .img-smple-2 {
     display: flex;
-    justify-content: space space-evenly;
     align-items: center;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
@@ -149,10 +171,114 @@ img {
 }
 .img-smple-3 {
     display: flex;
-    justify-content: space space-evenly;
     align-items: center;
     gap: 60px;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
 
+}
+.img-smple-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.img-smple-text p {
+    line-height: 1.7;
+}
+.img-smple-title {
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    margin: 0;
+}
+
+.service-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    flex: 0 1 400px;
+    min-width: 0;
+}
+
+
+.service-row {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    color: #FFFADA;
+    text-shadow: 2px 2px 8px #33363D;
+}
+
+.service-row > img {
+    display: block;
+    flex: 1 1 50%;
+    min-width: 0;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .slogan {
+        height: auto;
+        min-height: 35vh;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .slogan h2 {
+        overflow-wrap: anywhere;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    .sec-2-container {
+        width: calc(100% - 2rem);
+        margin: 3rem auto;
+        padding: 1.25rem;
+        gap: 1.5rem;
+    }
+
+    .section-2-content {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+
+    .img-cont {
+        gap: 3rem;
+    }
+
+    .service-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+    }
+
+    .service-row > img {
+        width: 100%;
+        flex: none;
+        max-height: 320px;
+        object-fit: contain;
+    }
+
+    .img-smple-text {
+        width: 100%;
+    }
+
+    .img-smple-text button {
+        align-self: stretch;
+    }
 }
