@@ -11,8 +11,8 @@ body {
     padding: 0;
     background-image:
     linear-gradient(
-      rgb(0 0 0 / 30%),
-      rgb(0 0 0 / 30%)
+      rgb(0 0 0 / 20%),
+      rgb(0 0 0 / 20%)
     ),
     url("./images/bg-alt-1.jpg");
     background-size: cover;
@@ -43,7 +43,10 @@ ul {
     gap: 1.5rem;
     width: 100%;
     padding: 1.5rem clamp(1rem, 4vw, 3rem);
-    margin-top: 1rem;
+    margin-top: 0rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: outset 2px #33363D;
+    box-shadow: 0px 2px 4px #33363D;
 }
 .site-logo {
     display: block;
@@ -51,10 +54,31 @@ ul {
     height: auto;
     box-shadow: none;
 }
-.services {
-    font-size: 30px;
-    text-shadow: 1px 1px 6px #33363D;
+.social-logos { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 0;
+    font-size: 2.0rem;
     color: #FFFADA;
+}
+.social-logos li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFADA;
+    font-size: 1.75rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+
+}
+.social-logos li a:hover {
+    color: #6689dc;
+    transform: translateY(-3px);
 }
 .logo {
     font-size: 45px;
