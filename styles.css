@@ -71,18 +71,10 @@ ul {
     font-size: 1.75rem;
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
-
-
 }
 .social-logos li a:hover {
     color: #6689dc;
     transform: translateY(-3px);
-}
-.logo {
-    font-size: 45px;
-    font-weight: 800;  
-    text-shadow: 2px 2px 7px #33363D;
-    color: #FFFADA;
 }
 /*---------Main-------------------------------- */
 .slogan {
@@ -91,10 +83,9 @@ ul {
     align-items: center;
     justify-content: center;
     height: 60vh;
+    width: 100%;
     color: #FFFADA;
     text-shadow: 2px 2px 8px #33363D;
-    margin: 0 0 auto;
-    padding: 0 0 auto;
 }
 .slogan h2 {
     font-size: clamp(2.2rem, 5.5vw, 6.5rem);
@@ -104,6 +95,7 @@ ul {
 }
 .slogan p {
     font-size: 25px;
+    align-self: center;
 }
 footer {
     display: flex;
