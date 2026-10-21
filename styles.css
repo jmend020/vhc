@@ -1,6 +1,5 @@
 body {
-    background-color: #3b82f6;
-    background: linear-gradient(to right, #80a8ff, #CEB5FF); 
+    background-color: #FFF8F8;
     font-family: Neuton, serif;
     box-sizing: border-box;
     display: flex;
@@ -14,9 +13,8 @@ body {
       rgb(0 0 0 / 20%),
       rgb(0 0 0 / 20%)
     ),
-    url("./images/bg-alt-1.jpg");
+    url("./images/bg-alt-2.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 *,
@@ -30,6 +28,10 @@ html {
 }
 
 /*---------Header-------------------------------- */
+a, a:visited {
+    text-decoration: none;
+    color:inherit;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -38,17 +40,17 @@ ul {
 }
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
     width: 100%;
     padding: 1.5rem clamp(1rem, 4vw, 2rem);
     margin-top: 0rem;
-    background-color: #B3A7CA;
+    background-color: #CCCC98;
 }
 .site-logo {
     display: block;
-    width: clamp(120px, 22vw, 100px);
+    width: clamp(120px, 22vw, 180px);
     height: auto;
     box-shadow: none;
 }
@@ -57,7 +59,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 2.0rem;
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
@@ -76,26 +78,45 @@ ul {
     color: #6689dc;
     transform: translateY(-3px);
 }
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #CCCC98;
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    
+}
+.nav-bar li a:hover {
+    color: #6689dc;
+    transform: translateY(-3px);
+}
+
 /*---------Main-------------------------------- */
 .slogan {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 60vh;
     width: 100%;
-    color: #FFFADA;
-    text-shadow: 2px 2px 8px #33363D;
+    color: #33363D;
 }
-.slogan h2 {
-    font-size: clamp(2.2rem, 5.5vw, 6.5rem);
+.slogan h1 {
+    font-size: clamp(2.2rem, 5.5vw, 4.5rem);
     text-align: center;
     line-height: 1.0;
     margin: 0;
 }
 .slogan p {
-    font-size: 25px;
-    align-self: center;
+   font-size: clamp(1.0rem, 5.5vw, 1.5rem); 
+    
+}
+.slogan-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+
 }
 footer {
     display: flex;
@@ -112,8 +133,8 @@ footer {
     gap: 20px;
 }
 button {
-    background-color: #FFFADA;
-    color: #33363D;
+    background-color: #6689dc;
+    color: #FFF8E7;
     border: none;
     padding: 12px 23px;
     font-size: 18px;
