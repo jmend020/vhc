@@ -86,6 +86,9 @@ ul {
     align-items: center;
     margin-top: 0rem;
     font-size: 1.5rem;
+    border-bottom: solid 2px #33363D;
+    border-radius: 10px;
+    box-shadow: 2px #33363D;
     
 }
 .nav-bar li a:hover {
@@ -276,9 +279,6 @@ img {
         min-height: 35vh;
         padding: 2rem 1rem;
         text-align: center;
-    }
-    .hero-img {
-
     }
 
     .slogan h1 {
