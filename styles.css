@@ -46,15 +46,15 @@ ul {
     width: 100%;
     padding: 1.5rem clamp(1rem, 4vw, 2rem);
     margin-top: 0rem;
-    background-color: #CCCC98;
 
 }
 .site-logo {
     display: block;
-    width: clamp(120px, 22vw, 180px);
+    width: clamp(120px, 22vw, 250px);
     height: auto;
     box-shadow: none;
-    object-fit: cover;
+
+ 
 }
 .social-logos { 
     list-style: none;
@@ -64,7 +64,7 @@ ul {
     gap: 2.0rem;
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #33363D;
 }
 .social-logos li a {
@@ -84,7 +84,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #CCCC98;
     margin-top: 0rem;
     font-size: 1.5rem;
     
