@@ -1,6 +1,6 @@
 body {
     background-color: #FFF8F8;
-    font-family: Neuton, serif;
+    font-family: Inter, serif;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -41,18 +41,16 @@ ul {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
     width: 100%;
     padding: 1.5rem clamp(1rem, 4vw, 2rem);
-    margin-top: 0rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #33363D;
 
 }
 .site-logo {
     display: block;
-    width: clamp(120px, 22vw, 250px);
-    height: auto;
-    box-shadow: none;
 
  
 }
@@ -65,7 +63,7 @@ ul {
     padding: 0;
     margin: 0;
     font-size: 1.7rem;
-    color: #33363D;
+    color: #FFFADA;
 }
 .social-logos li a {
     display: inline-flex;
@@ -85,7 +83,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 0rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     box-shadow: 2px #33363D;
     
 }
